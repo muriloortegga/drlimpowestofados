@@ -50,43 +50,41 @@ const WA = "https://wa.me/5511942815534?text=Ol%C3%A1!%20Gostaria%20de%20limpar%
 const SERVICES = [
   {
     name: "Sofá (2 a 3 lugares)",
-    meta: "Aprox. 2h a 3h · A partir de R$280 · Limpeza e remoção de odores",
+    meta: "Aprox. 2h a 3h · A partir de R$280 · Limpeza profunda e remoção de odores",
   },
   {
-    name: "Poltrona e Recamiers",
-    meta: "Aprox. 1h · Renovação completa de fibras e remoção de ácaros",
+    name: "Colchão (casal, queen ou king)",
+    meta: "Eliminação de ácaros, fungos e alérgenos · Sob consulta de tempo",
   },
   {
-    name: "Cadeiras de jantar ou escritório",
-    meta: "Aprox. 30 min por unidade · Lavagem profunda",
+    name: "Cadeiras e poltronas",
+    meta: "Aprox. 30 min a 1h por unidade · Renovação completa de fibras",
   },
   {
-    name: "Bancos de carro (estética automotiva)",
-    meta: "Aprox. 1h a 2h · Higienização interna de tecido ou couro",
+    name: "Tapetes e carpetes",
+    meta: "Extração profunda de poeira e desodorização a partir de 1h",
   },
-  { name: "Tapetes e carpetes", meta: "Limpeza profunda e desinfecção a partir de 1h" },
-  { name: "Colchões e cabeceiras", meta: "Eliminação bacteriana e de alérgenos sob consulta" },
   {
-    name: "Higienização de Frotas de Empresas",
-    meta: "A gente vai até a sua empresa. A frota não precisa sair de circulação.",
+    name: "Estofados de automóvel",
+    meta: "Bancos, carpete interno e teto · Aprox. 1h a 2h · Higienização de tecido ou couro",
   },
 ];
 
 const STEPS = [
   {
     n: "1",
-    title: "Agendamento pelo WhatsApp",
-    body: "Você manda mensagem, a gente responde rápido e combina a data certa para a higienização do seu sofá. Sem burocracia ou formulários.",
+    title: "Envie uma foto",
+    body: "Compartilhe algumas fotos do estofado pelo WhatsApp para uma avaliação rápida. É simples e sem compromisso.",
   },
   {
     n: "2",
-    title: "Atendimento a domicílio",
-    body: "Levamos equipamentos de extração e produtos profissionais aprovados pela ANVISA. Você não precisa liberar espaço além do estofado, montamos tudo em 10 minutos.",
+    title: "Agende o melhor dia",
+    body: "Após a avaliação, enviamos o orçamento e marcamos juntos a data e o horário que funciona melhor pra você.",
   },
   {
     n: "3",
-    title: "Resultado aprovado na hora",
-    body: "Você confere e aprova o serviço na hora. Apenas finalizamos e arrumamos o local quando você estiver 100% satisfeito com o sofá limpo.",
+    title: "A gente vai até você",
+    body: "Chegamos no seu endereço com todos os equipamentos necessários. Você não precisa carregar nada nem preparar nada além de liberar acesso ao estofado.",
   },
 ];
 
@@ -170,27 +168,26 @@ function EstofadosPage() {
               <Sparkles className="h-3.5 w-3.5 mr-1" /> Higienização de estofados premium
             </span>
             <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-[1.1] sm:text-5xl md:text-6xl text-white tracking-tight">
-              Manchas, odores e ácaros saem. Seu sofá limpo e renovado como novo.
+              Seu estofado limpo, higienizado e renovado sem você sair de casa.
             </h1>
             <p className="mt-6 max-w-2xl text-base text-foreground-soft sm:text-lg leading-relaxed">
-              Higienização profissional de sofás, poltronas, colchões, tapetes e bancos automotivos.
-              Atendemos direto no seu endereço em Vargem Grande Paulista, Cotia, Itapevi e região.
+              Higienizamos sofás, colchões, tapetes, cadeiras, poltronas e estofados de automóveis
+              com atendimento em domicílio.
             </p>
             <div className="mt-8 inline-flex items-center gap-3 rounded-xl border border-border bg-card-2/80 px-5 py-4 text-sm sm:text-base text-foreground-soft">
               <Clock className="h-5 w-5 text-brand-light flex-shrink-0" />
               <span>
-                A higienização de sofá começa em <strong className="text-white">R$280</strong> e
-                leva até <strong className="text-white">3 horas</strong> para ficar pronta no seu
-                local.
+                <strong className="text-white">A partir de R$280</strong> · Atendimento no seu
+                endereço · <strong className="text-white">Até 3 horas</strong>
               </span>
             </div>
             <div className="mt-10 flex flex-wrap gap-4 items-center">
               <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 <WhatsAppIcon className="h-5 w-5" />
-                Quero higienizar meu estofado
+                Solicitar orçamento
               </a>
               <a href="#processo" className="btn-ghost flex items-center gap-1.5">
-                Ver como funciona <ArrowDown className="h-4 w-4" />
+                Como agendar <ArrowDown className="h-4 w-4" />
               </a>
             </div>
           </div>
@@ -228,19 +225,16 @@ function EstofadosPage() {
           </div>
         </section>
 
-        {/* PROCESSO */}
+        {/* COMO AGENDAR */}
         <section id="processo" className="border-b border-border-soft bg-background-soft/30">
           <div className="container-page py-20">
             <div className="max-w-3xl">
               <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-                <span className="h-2 w-2 rounded-full bg-brand-light"></span> Praticidade
+                <span className="h-2 w-2 rounded-full bg-brand-light"></span> Simples assim
               </span>
-              <h2 className="text-3xl sm:text-4xl text-white font-bold">
-                Como funciona nosso atendimento
-              </h2>
+              <h2 className="text-3xl sm:text-4xl text-white font-bold">Como agendar</h2>
               <p className="mt-4 text-foreground-soft leading-relaxed">
-                Três etapas simples e descomplicadas para deixar seu estofado novo, livre de ácaros,
-                fungos e cheiro desagradável.
+                Três passos simples, sem burocracia e sem você precisar sair de casa.
               </p>
             </div>
             <ol className="mt-12 grid gap-6 md:grid-cols-3">
@@ -257,6 +251,12 @@ function EstofadosPage() {
                 </li>
               ))}
             </ol>
+            <div className="mt-12 flex justify-center">
+              <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+                <WhatsAppIcon className="h-5 w-5" />
+                Solicitar orçamento
+              </a>
+            </div>
           </div>
         </section>
 
@@ -326,14 +326,12 @@ function EstofadosPage() {
         <section className="container-page py-20 border-b border-border-soft" id="galeria">
           <div className="max-w-3xl">
             <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-              <span className="h-2 w-2 rounded-full bg-brand-light"></span> Galeria
+              <span className="h-2 w-2 rounded-full bg-brand-light"></span> Antes e depois
             </span>
-            <h2 className="text-3xl sm:text-4xl text-white font-bold">
-              Resultados reais Dr. Limpow
-            </h2>
+            <h2 className="text-3xl sm:text-4xl text-white font-bold">Veja a transformação</h2>
             <p className="mt-4 text-foreground-soft leading-relaxed">
-              Estamos atualizando nosso portfólio. Em breve, você verá aqui fotos de antes e depois
-              dos sofás, carros e tapetes limpos por nossa equipe.
+              Sem filtros e sem edição. Apenas resultados reais de serviços realizados pela nossa
+              equipe.
             </p>
           </div>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
@@ -353,6 +351,12 @@ function EstofadosPage() {
               </div>
             ))}
           </div>
+          <div className="mt-12 flex justify-center">
+            <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
+              <WhatsAppIcon className="h-5 w-5" />
+              Solicitar orçamento
+            </a>
+          </div>
         </section>
 
         {/* DEPOIMENTOS */}
@@ -362,10 +366,17 @@ function EstofadosPage() {
               <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
                 <span className="h-2 w-2 rounded-full bg-brand-light"></span> Avaliações
               </span>
-              <h2 className="text-3xl sm:text-4xl text-white font-bold">O que dizem sobre nós</h2>
-              <p className="mt-4 text-foreground-soft leading-relaxed">
-                A satisfação de nossos clientes é a prova da qualidade do nosso serviço de
-                higienização de estofados.
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-3xl sm:text-4xl text-white font-bold">
+                  O que nossos clientes dizem
+                </h2>
+                <span className="chip flex items-center gap-1.5 shrink-0">
+                  <Star className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" /> 5,0 ·{" "}
+                  <span className="text-brand-text">[X avaliações] no Google</span>
+                </span>
+              </div>
+              <p className="mt-2 text-foreground-soft leading-relaxed">
+                Avaliações reais publicadas no Google por clientes que confiaram no nosso trabalho.
               </p>
             </div>
             <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -405,11 +416,10 @@ function EstofadosPage() {
               }}
             />
             <h2 className="text-3xl sm:text-4xl text-white font-bold tracking-tight">
-              Pronto para deixar seu estofado renovado?
+              Seu estofado merece esse cuidado.
             </h2>
             <p className="mt-4 text-foreground-soft max-w-xl mx-auto leading-relaxed">
-              Mande uma mensagem agora mesmo no WhatsApp e consulte um orçamento sem compromisso.
-              Sua família e sua saúde merecem esse cuidado.
+              Fale com a gente pelo WhatsApp e receba seu orçamento de forma rápida e descomplicada.
             </p>
 
             <ul className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-foreground-soft">
@@ -424,11 +434,11 @@ function EstofadosPage() {
             <div className="mt-12 flex justify-center">
               <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-whatsapp">
                 <WhatsAppIcon className="h-5 w-5" />
-                Agendar via WhatsApp
+                Solicitar orçamento
               </a>
             </div>
             <p className="mt-4 text-xs text-muted">
-              Resposta direta. Normalmente respondemos em menos de 1h.
+              Sem formulário. Resposta direta com o Victor. Normalmente respondemos em menos de 1h.
             </p>
           </div>
         </section>

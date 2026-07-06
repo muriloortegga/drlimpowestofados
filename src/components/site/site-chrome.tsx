@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Logo } from "./Logo";
 
-const NAV = [{ to: "/estofados", label: "Estofados" }];
+const NAV: { to: string; label: string }[] = [];
 
 const WA = "https://wa.me/5511942815534?text=Ol%C3%A1!%20Gostaria%20de%20limpar%20meu%20estofado.";
 
