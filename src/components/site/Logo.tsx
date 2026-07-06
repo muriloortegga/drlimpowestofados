@@ -12,11 +12,7 @@ function logoColor(scheme: "dark-bg" | "light-bg" = "dark-bg"): string {
 }
 
 // ─── Logo Horizontal (header) ────────────────────────────────────────────────
-export function LogoHoriz({
-  colorScheme = "dark-bg",
-  className = "",
-  ...props
-}: LogoBaseProps) {
+export function LogoHoriz({ colorScheme = "dark-bg", className = "", ...props }: LogoBaseProps) {
   const fill = logoColor(colorScheme);
   return (
     <svg
@@ -78,11 +74,7 @@ export function LogoHoriz({
 }
 
 // ─── Logo Tip (footer) ───────────────────────────────────────────────────────
-export function LogoTip({
-  colorScheme = "dark-bg",
-  className = "",
-  ...props
-}: LogoBaseProps) {
+export function LogoTip({ colorScheme = "dark-bg", className = "", ...props }: LogoBaseProps) {
   const fill = logoColor(colorScheme);
   return (
     <svg
@@ -140,11 +132,7 @@ export function LogoTip({
 }
 
 // ─── Ícone isolado ────────────────────────────────────────────────────────────
-export function LogoIcon({
-  colorScheme = "dark-bg",
-  className = "",
-  ...props
-}: LogoBaseProps) {
+export function LogoIcon({ colorScheme = "dark-bg", className = "", ...props }: LogoBaseProps) {
   const fill = logoColor(colorScheme);
   return (
     <svg

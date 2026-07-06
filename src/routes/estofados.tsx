@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header, Footer } from "@/components/site/site-chrome";
+import { LogoIcon } from "@/components/site/Logo";
 import {
   Accordion,
   AccordionItem,
@@ -164,9 +165,6 @@ function EstofadosPage() {
             }}
           />
           <div className="container-page pt-14 pb-20 sm:pt-24 sm:pb-28">
-            <span className="chip">
-              <Sparkles className="h-3.5 w-3.5 mr-1" /> Higienização de estofados premium
-            </span>
             <h1 className="mt-6 max-w-4xl text-4xl font-extrabold leading-[1.1] sm:text-5xl md:text-6xl text-white tracking-tight">
               Seu estofado limpo, higienizado e renovado sem você sair de casa.
             </h1>
@@ -196,9 +194,6 @@ function EstofadosPage() {
         {/* SERVIÇOS */}
         <section className="container-page py-20 border-b border-border-soft" id="servicos">
           <div className="max-w-3xl">
-            <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-              <span className="h-2 w-2 rounded-full bg-brand-light"></span> O que nós limpamos
-            </span>
             <h2 className="text-3xl sm:text-4xl text-white font-bold">
               Soluções completas de higienização
             </h2>
@@ -229,9 +224,6 @@ function EstofadosPage() {
         <section id="processo" className="border-b border-border-soft bg-background-soft/30">
           <div className="container-page py-20">
             <div className="max-w-3xl">
-              <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-                <span className="h-2 w-2 rounded-full bg-brand-light"></span> Simples assim
-              </span>
               <h2 className="text-3xl sm:text-4xl text-white font-bold">Como agendar</h2>
               <p className="mt-4 text-foreground-soft leading-relaxed">
                 Três passos simples, sem burocracia e sem você precisar sair de casa.
@@ -264,9 +256,6 @@ function EstofadosPage() {
         <section className="container-page py-20 border-b border-border-soft" id="faq">
           <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr]">
             <div>
-              <span className="chip mb-4">
-                <ShieldCheck className="h-3.5 w-3.5 mr-1" /> Perguntas frequentes
-              </span>
               <h2 className="text-3xl sm:text-4xl text-white font-bold">
                 Dúvidas sobre a higienização de sofá
               </h2>
@@ -325,9 +314,6 @@ function EstofadosPage() {
         {/* GALERIA */}
         <section className="container-page py-20 border-b border-border-soft" id="galeria">
           <div className="max-w-3xl">
-            <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-              <span className="h-2 w-2 rounded-full bg-brand-light"></span> Antes e depois
-            </span>
             <h2 className="text-3xl sm:text-4xl text-white font-bold">Veja a transformação</h2>
             <p className="mt-4 text-foreground-soft leading-relaxed">
               Sem filtros e sem edição. Apenas resultados reais de serviços realizados pela nossa
@@ -363,9 +349,6 @@ function EstofadosPage() {
         <section className="border-b border-border-soft bg-background-soft/30" id="depoimentos">
           <div className="container-page py-20">
             <div className="max-w-3xl">
-              <span className="font-mono text-xs uppercase tracking-widest text-brand-text flex items-center gap-2 mb-3">
-                <span className="h-2 w-2 rounded-full bg-brand-light"></span> Avaliações
-              </span>
               <div className="flex items-center gap-3 mb-4">
                 <h2 className="text-3xl sm:text-4xl text-white font-bold">
                   O que nossos clientes dizem
@@ -415,6 +398,9 @@ function EstofadosPage() {
                   "radial-gradient(85% 85% at 50% 115%, var(--brand-soft), transparent 75%)",
               }}
             />
+            <div className="flex justify-center mb-6">
+              <LogoIcon colorScheme="dark-bg" className="h-12 w-auto opacity-80" />
+            </div>
             <h2 className="text-3xl sm:text-4xl text-white font-bold tracking-tight">
               Seu estofado merece esse cuidado.
             </h2>

@@ -53,15 +53,15 @@
   --border: #223144;
   --border-soft: rgba(255, 255, 255, 0.06);
 
-  --brand:        #013572;
-  --brand-light:  #2063c6;
-  --brand-dark:   #012050;
-  --brand-soft:   #0a2145;
-  --brand-text:   #8ab4f8;
-  --white:        #ffffff;
-  --good:         #4caf82;
-  --warn:         #e6a817;
-  --bad:          #e05a5a;
+  --brand: #013572;
+  --brand-light: #2063c6;
+  --brand-dark: #012050;
+  --brand-soft: #0a2145;
+  --brand-text: #8ab4f8;
+  --white: #ffffff;
+  --good: #4caf82;
+  --warn: #e6a817;
+  --bad: #e05a5a;
 
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-mono: "DM Mono", monospace;
