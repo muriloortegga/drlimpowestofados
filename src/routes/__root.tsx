@@ -119,6 +119,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png",
       },
+      { property: "og:title", content: "Dr. Limpow — Higienização de Estofados & Estética Automotiva" },
+      { name: "twitter:title", content: "Dr. Limpow — Higienização de Estofados & Estética Automotiva" },
+      { name: "description", content: "Higienização profissional de sofás, poltronas, colchões, tapetes residenciais e automotivos. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região." },
+      { property: "og:description", content: "Higienização profissional de sofás, poltronas, colchões, tapetes residenciais e automotivos. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região." },
+      { name: "twitter:description", content: "Higienização profissional de sofás, poltronas, colchões, tapetes residenciais e automotivos. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4bb52b68-0f2e-470e-96f8-4e9db05d1f2e/id-preview-9bfe63ef--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783349790470.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/4bb52b68-0f2e-470e-96f8-4e9db05d1f2e/id-preview-9bfe63ef--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783349790470.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
