@@ -77,22 +77,48 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Dr. Limpow — Higienização profissional de estofados" },
+      { title: "Dr. Limpow — Higienização de Estofados & Estética Automotiva" },
       {
         name: "description",
         content:
-          "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia.",
+          "Higienização profissional de sofás, poltronas, colchões, tapetes e estética automotiva. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região.",
       },
       { name: "author", content: "Dr. Limpow" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Dr. Limpow — Higienização profissional de estofados" },
-      { name: "twitter:title", content: "Dr. Limpow — Higienização profissional de estofados" },
-      { name: "description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
-      { property: "og:description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
-      { name: "twitter:description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png" },
+      {
+        property: "og:title",
+        content: "Dr. Limpow — Higienização de Estofados & Estética Automotiva",
+      },
+      {
+        name: "twitter:title",
+        content: "Dr. Limpow — Higienização de Estofados & Estética Automotiva",
+      },
+      {
+        name: "description",
+        content:
+          "Higienização profissional de sofás, poltronas, colchões, tapetes e estética automotiva. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região.",
+      },
+      {
+        property: "og:description",
+        content:
+          "Higienização profissional de sofás, poltronas, colchões, tapetes e estética automotiva. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região.",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Higienização profissional de sofás, poltronas, colchões, tapetes e estética automotiva. Atendimento a domicílio em Vargem Grande Paulista, Cotia e região.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -101,7 +127,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&family=Baloo+2:wght@500;600;700;800&display=swap",
       },
     ],
   }),
@@ -113,7 +139,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
