@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Logo } from "./Logo";
+import { LogoHoriz, LogoTip } from "./Logo";
 
 const NAV: { to: string; label: string }[] = [];
 
@@ -9,11 +9,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background-soft/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2.5">
-          <Logo mode="color" size={32} className="w-auto h-8 animate-fade-in" />
-          <span className="font-logo text-brand-text text-2xl font-bold tracking-tight">
-            Dr. Limpow
-          </span>
+        <Link to="/" className="flex items-center">
+          <LogoHoriz
+            colorScheme="dark-bg"
+            className="h-8 w-auto animate-fade-in"
+          />
         </Link>
         <nav className="hidden gap-6 text-sm text-foreground-soft sm:flex">
           {NAV.map((n) => (
@@ -45,12 +45,10 @@ export function Footer() {
     <footer className="mt-24 border-t border-border bg-background-soft/40">
       <div className="container-page py-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm text-muted">
         <div className="flex items-center gap-3">
-          <Logo mode="color" size={24} className="w-auto h-6" />
-          <span>
-            © {new Date().getFullYear()}{" "}
-            <span className="font-logo text-brand-text font-bold">Dr. Limpow</span> · Higienização
-            profissional
-          </span>
+          <LogoTip
+            colorScheme="dark-bg"
+            className="h-5 w-auto opacity-70"
+          />
         </div>
         <div className="flex gap-5">
           <a
