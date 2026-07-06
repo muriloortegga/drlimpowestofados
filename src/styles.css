@@ -68,7 +68,18 @@
   --font-logo: "Baloo 2", "DM Sans", sans-serif;
 
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Motion tokens — filosofia Vercel, valores próprios */
+  --motion-duration-micro: 150ms;
+  --motion-duration-state: 200ms;
+  --motion-duration-entrance: 300ms;
+  --motion-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Elevação por luminância — lógica Linear, base cor da marca */
+  --elev-1: color-mix(in oklab, white 5%, transparent);
+  --elev-2: color-mix(in oklab, white 8%, transparent);
 }
+
 
 @layer base {
   * {
