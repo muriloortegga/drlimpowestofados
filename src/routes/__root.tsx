@@ -86,6 +86,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Dr. Limpow" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Dr. Limpow — Higienização profissional de estofados" },
+      { name: "twitter:title", content: "Dr. Limpow — Higienização profissional de estofados" },
+      { name: "description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
+      { property: "og:description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
+      { name: "twitter:description", content: "Higienização de sofás, poltronas, cadeiras, carros e tapetes no seu endereço. Vargem Grande Paulista e Cotia." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/366b0283-3131-4092-baae-8dd519d17249/id-preview-92e5def0--63577fbd-da81-45b0-9d5c-fb3076c763ab.lovable.app-1783116903203.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
